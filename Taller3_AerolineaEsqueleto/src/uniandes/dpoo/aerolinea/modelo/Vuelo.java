@@ -1,14 +1,26 @@
 package uniandes.dpoo.aerolinea.modelo;
 
+import java.util.Collection;
+import java.util.Map;
+
 import uniandes.dpoo.aerolinea.modelo.cliente.Cliente;
+import uniandes.dpoo.aerolinea.tiquetes.Tiquete;
 
 public class Vuelo {
 
     private String fecha;
 
+    //RELACIONES UNO A UNO (UN VUELO TIENE UNA RUTA Y UN AVION)
+
     private Ruta ruta;
 
     private Avion avion;
+
+    //VUELO TIENE MUCHOS TIQUETES
+    private  Map<String, Tiquete> tiquetes;
+
+
+
 
 
     public Vuelo(Ruta ruta, String fecha, Avion avion){
@@ -30,7 +42,10 @@ public class Vuelo {
         return avion;
     }
 
-    //TODO -> HACER LA RELACIÓN CON TIQUETES Y EL METODO
+
+    public Collection<Tiquete> getTiquetes(){
+        return tiquetes.values();
+    }
 
     public int venderTiquetes(Cliente cliente, CalculadoraTarifas calculadora, int cantidad){
         // Implementar cuando ya todo lo demás este listo
@@ -39,6 +54,7 @@ public class Vuelo {
 
     public boolean equals(Object obj){
          // Implementar cuando ya todo lo demás este listo
+         return true;
     }
 
 }

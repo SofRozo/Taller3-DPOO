@@ -7,6 +7,8 @@ public class Ruta
 {
     // TODO completar
 
+    
+
 
     /**
      * Dada una cadena con una hora y minutos, retorna los minutos.
