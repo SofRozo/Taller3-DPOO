@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 
 import uniandes.dpoo.aerolinea.modelo.cliente.Cliente;
+import uniandes.dpoo.aerolinea.tarifas.CalculadoraTarifas;
 import uniandes.dpoo.aerolinea.tiquetes.Tiquete;
 
 public class Vuelo {
@@ -48,6 +49,7 @@ public class Vuelo {
     }
 
     public int venderTiquetes(Cliente cliente, CalculadoraTarifas calculadora, int cantidad){
+        return cantidad;
         // Implementar cuando ya todo lo demás este listo
         
     }
