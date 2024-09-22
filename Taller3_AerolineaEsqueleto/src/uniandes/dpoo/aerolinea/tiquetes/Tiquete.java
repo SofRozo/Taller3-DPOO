@@ -10,8 +10,6 @@ public class Tiquete{
     private boolean usado;
 
     private Cliente clienteComprador;
-
-    // sale error en Vuelo porque aún no hemos creado esa clase
     private Vuelo vuelo;
 
    
@@ -40,15 +38,13 @@ public class Tiquete{
         return tarifa;
     }
 
-    //Metodos lógica
 
     public void marcarComoUsado(){
-        // Implementar lógica cuando todo lo demás este listo
+        this.usado = true;
     }
 
     public boolean esUsado(){
         return usado;
-         // Implementar lógica cuando todo lo demás este listo
     }
 
 

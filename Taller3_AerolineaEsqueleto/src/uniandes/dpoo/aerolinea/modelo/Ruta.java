@@ -5,7 +5,6 @@ package uniandes.dpoo.aerolinea.modelo;
  * una aerolínea.
  */
 public class Ruta {
-    // TODO completar
 
     private String horaDesalida;
     private String horaDellegada;

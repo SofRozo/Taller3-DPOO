@@ -36,14 +36,13 @@ public class ClienteCorporativo extends Cliente
 
     @Override
     public String getTipoCliente() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getTipoCliente'");
+       return CORPORATIVO;
     }
 
     @Override
     public String getIdentificador() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getIdentificador'");
+        return nombreEmpresa;
+        
     }
 
 

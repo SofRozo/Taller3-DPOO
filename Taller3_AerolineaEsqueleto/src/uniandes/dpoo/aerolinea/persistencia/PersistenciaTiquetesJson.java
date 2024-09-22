@@ -209,7 +209,7 @@ public class PersistenciaTiquetesJson implements IPersistenciaTiquetes
             jTiquete.put( FECHA, tiquete.getVuelo( ).getFecha( ) );
             jTiquete.put( TARIFA, tiquete.getTarifa( ) );
             jTiquete.put( USADO, tiquete.esUsado( ) );
-            jTiquete.put( CLIENTE, tiquete.getCliente( ).getIdentificador( ) );
+            jTiquete.put( CLIENTE, tiquete.getClienteComprador( ).getIdentificador( ) );
 
             jTiquetes.put( jTiquete );
         }
